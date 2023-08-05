@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="todo flex">
+            <div class="input-box flex">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <input type="text" id="input" placeholder="Type your todo list">
+                <button id="button"><i class="fa-solid fa-plus"></i></button>
+            </div>
+            <div class="text flex">
+                <p><i class="fa-solid fa-check-double"></i> Complete all tasks</p>
+                <p> Clear completed</p>
+            </div>
+            <hr>
+            <div class="task-list flex">
+                <div class="no-task">No tasks</div>
+            </div>
+            <hr>
+            <div class="text text2 flex">
+                <p><span id="tasksLeft"></span> tasks left</p>
+                <div class="filter flex">
+                    <p class="filter-option active" data-filter="all">All</p>
+                    <p class="filter-option" data-filter="incomplete">Incomplete</p>
+                    <p class="filter-option" data-filter="completed">Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
