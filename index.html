@@ -10,28 +10,34 @@
 </head>
 
 <body>
+   
     <div class="container flex">
         <div class="todo flex">
+            <!-- Input box for adding new tasks -->
             <div class="input-box flex">
-                <i class="fa-solid fa-clipboard-list"></i>
-                <input type="text" id="input" placeholder="Type your todo list">
-                <button id="button"><i class="fa-solid fa-plus"></i></button>
+                <i class="fa-solid fa-clipboard-list"></i> 
+                <input type="text" id="input" placeholder="Type your todo list"> <!-- Input field for typing new tasks -->
+                <button id="button"><i class="fa-solid fa-plus"></i></button> <!-- Button to add new tasks -->
             </div>
+            <!-- Section for showing options related to tasks -->
             <div class="text flex">
-                <p><i class="fa-solid fa-check-double"></i> Complete all tasks</p>
-                <p> Clear completed</p>
+                <p><i class="fa-solid fa-check-double"></i> Complete all tasks</p> 
+                <p>Clear completed</p>
             </div>
-            <hr>
+            <hr> 
+            <!-- Container for displaying the list of tasks -->
             <div class="task-list flex">
-                <div class="no-task">No tasks</div>
+                <div class="no-task">No tasks</div> <!-- Placeholder for when there are no tasks -->
             </div>
             <hr>
+       
             <div class="text text2 flex">
-                <p><span id="tasksLeft"></span> tasks left</p>
+                <p><span id="tasksLeft"></span> tasks left</p> <!-- Display the number of tasks left -->
+                <!-- Container for filtering options -->
                 <div class="filter flex">
-                    <p class="filter-option active" data-filter="all">All</p>
-                    <p class="filter-option" data-filter="incomplete">Incomplete</p>
-                    <p class="filter-option" data-filter="completed">Completed</p>
+                    <p class="filter-option active" data-filter="all">All</p> <!-- Filter option to show all tasks -->
+                    <p class="filter-option" data-filter="incomplete">Incomplete</p> <!-- Filter option to show incomplete tasks -->
+                    <p class="filter-option" data-filter="completed">Completed</p> <!-- Filter option to show completed tasks -->
                 </div>
             </div>
         </div>
